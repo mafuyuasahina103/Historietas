@@ -1,0 +1,40 @@
+body,h1,h2,p{
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: purple;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 0;
+    animation: glow 1.5 infinite alternate;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(90deg,#e1e5e5,#f4f4f4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px rgba(0, 0, 0,0, 5);
+}
+
+header:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    width: 120%;
+    height: 150%;
+    background: radial-gradient(circle,rgba(255,255,255,0.2) 0% transparent 70%);
+    z-index: 0;
+    animation: pulse 6s infinite;
+    border-radius: 50%;
+}
