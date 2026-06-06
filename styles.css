@@ -38,3 +38,100 @@ header:before{
     animation: pulse 6s infinite;
     border-radius: 50%;
 }
+
+@keyframes pulse{
+    0%{
+        transform: translate(50%,-50%) scale(1);
+        opacity: 1;
+}
+50%{
+    transform: translate(50%,-50%) scale(1.2);
+    opacity: 1;
+}
+100%{
+    transform: translate(50%,-50%) scale(1);
+    opacity: 1;
+}
+}
+p{
+    color: black;
+}
+
+h1{
+    font-size: 2rem;
+    color: aquamarine;
+}
+
+h2{
+    color: black;
+}
+
+main{
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.panel{
+   display: none; 
+    padding: 20px;
+    background-color:lightskyblue;
+    border-radius: 10px;
+    box-shadow: 0  4px 8px rgba(0,0,0,0.3);
+    animation:fadeIn 0.5s ease;
+}
+
+.panel h2{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.panel p{
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.navegation{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button{
+    background-color: #0077b6;
+color: #fff;
+padding: 10px 20px;
+text-decoration: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+.button:hover{
+    background: #00a8e8;
+}
+
+#panel1:checked ~ #content-panel1
+#panel2:checked ~ #content-panel2
+#panel3:checked ~ #content-panel3
+#panel4:checked ~ #content-panel4
+#panel5:checked ~ #content-panel5
+#panel6:checked ~ #content-panel6{
+    display:block;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    to{
+        opacity: 0;
+        transform: translateY(0);
+    }
+}
+
+input[type="radio"]{
+    display: none;
+}
