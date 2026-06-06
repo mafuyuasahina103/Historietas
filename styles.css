@@ -127,7 +127,7 @@ transition: background-color 0.3s;
     }
 
     to{
-        opacity: 0;
+        opacity: 1;
         transform: translateY(0);
     }
 }
